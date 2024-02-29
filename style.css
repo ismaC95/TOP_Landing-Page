@@ -1,7 +1,4 @@
-* {
-    border: 1px solid red;
-}
-
+/*General stuff*/
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -11,6 +8,7 @@ a {
     text-decoration: none;
 }
 
+/*Header part*/
 .header, 
 .introduction {
     background-color: #1F2937;
@@ -49,9 +47,11 @@ a {
     font-size: 18px;
 }
 
+/*Introduction with image part*/
 .introduction {
     display: flex;
     padding: 50px 100px;
+    gap: 50px;
 }
 
 .introduction-text {
@@ -77,26 +77,26 @@ a {
     color: #F9FAF8;
     border-radius: 5px;
     padding: 5px 30px;
+    font-weight: bold;
+    border: 0;
 }
 
-.img-container {
+.image-container {
     display: flex;
+    flex: 1;
+    background-color: grey;
+    min-height: 100px;
+    min-width: 175px;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    min-width: 400px;
-    max-height: 300px;
-    background-color: grey;
 }
 
-#tech-image {
-    width: 100%;
-    height: 100%;
-    max-width: 400px;
-    max-height: 300px;
-    object-fit: contain;
+#image-placeholder {
+    flex: 1;
+    text-align: center;
 }
 
+/*Body with cards part*/
 .main {
     margin: 0px 100px;
     margin-bottom: 50px;
@@ -137,6 +137,7 @@ a {
     text-align: center;
 }
 
+/*Grey quote part*/
 .quote {
     display: flex;
     flex-direction: column;
@@ -155,4 +156,46 @@ a {
     text-align: right;
     font-weight: bold;
     font-size: 20px;
+}
+
+/*Blue sign encouragement in square part*/
+.sup-btn {
+    display: flex;
+    margin: 50px 100px;
+    padding: 30px 75px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3882F6;
+    color: white;
+}
+
+.sup-btn-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.sup-btn-text-small {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+#sup-button {
+    background-color: #3882F6;
+    color: white;
+    padding: 5px 25px;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/*Footer part*/
+.footer {
+    background-color: #1F2937;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
